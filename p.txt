@@ -1,0 +1,306 @@
+Petunjuk Penyusunan 
+Laporan Proyek Mata Kuliah 
+Pengembangan Aplikasi Web
+
+Ketentuan umum: 
+1. Dokumen laporan wajib dibuat menggunakan Canva 
+2. Format penulisan bebas sesuai kreativitas masing-masing tim 
+3. Konten mengikuti checklists yang ada di bawah 
+4. Deliverables dalam format PDF, diunggah ke BRONE 
+
+Checklist halaman cover:  
+Tulisan: Laporan Proyek Kuliah Pengembangan Aplikasi Web  
+Nama Tim  
+Logo Tim  
+
+Improvements lainnya 
+Checklist halaman-halaman isi:  
+Latar Belakang (kondisi lapangan, motivasi, permasalahan, ide, dll)  
+Persona pengguna  
+Skenario penggunaan aplikasi (ceritakan skenario penggunaan aplikasi, yaitu cerita tentang persona pengguna dalam menggunakan aplikasi. Skenario ini dapat berupa narasi maupun storyboard.)  
+Gambar sitemap  
+Fitur-fitur pada aplikasi web (disebutkan nama fitur, alamat URL, dan dijelaskan dengan disertai screenshots)  
+Kesimpulan dan saran  
+Lampiran: Foto dokumentasi proses pengerjaan  Improvements lainnya 
+
+Kriteria dan Bobot Penilaian (titip)
+
+ 1. Definisi masalah [40%]:
+ a. Latar belakang dan permasalahan
+ b. Persona pengguna (bisa lebih dari 1)
+
+ 2. Pengembangan solusi [40%]:
+ a. Aplikasi web yang dikembangkan sebagai solusi
+ 
+3. Penyampaian hasil proyek [20%]:
+ a. Presentasi dan demo
+ b. Source Code
+ c. Dokumen laporan (sesuai panduan yang diberikan
+
+
+1. Latar Belakang	5
+1.1. Kondisi Lapangan	5
+1.2. Motivasi	5
+1.3. Permasalahan	5
+1.4. Ide Solusi	5
+2. Persona Pengguna	6
+2.1. Persona 1: Yudi Wahyudi	6
+2.1.1. Latar Belakang	6
+2.1.2. Goals	6
+2.1.3. Frustations	6
+2.2. Persona 2: Arya Aryanto	7
+2.2.1. Latar Belakang	7
+2.2.2. Goals	7
+2.2.3. Frustations	7
+3. Sitemap	8
+Struktur Utama Sistem	11
+Client Side (Customer Interface)	11
+Landing & Authentication (/)	11
+Menu & Ordering (/menu)	11
+Checkout & Payment (/checkout)	11
+Admin Side (Restaurant Staff Interface)	11
+Authentication System (/admin)	11
+Dashboard & Order Management (/admin/dashboard)	11
+Reporting System (/admin/reports) - Opsional	12
+Flow Sistem dan User Journey	12
+Keunggulan Struktur Sitemap	12
+Efisiensi Operasional:	12
+User Experience:	12
+Management Capabilities:	13
+Technical Architecture	13
+Scalability dan Future Enhancement	13
+4. Skenario	14
+4.1. Narasi 1	14
+4.2. Narasi 2	14
+5. Fitur Aplikasi Web	15
+5.1. Bagian Client (Client)	15
+5.1.1. Scan QR Code	15
+5.1.2. Halaman Awal Pesanan (LAMAN)	15
+5.1.3. Pilih & Tambah Menu ke Keranjang	15
+5.1.4. Checkout & Pembayaran	15
+5.1.5. Struk Digital & Konfirmasi Pesanan	15
+5.2. Bagian Pegawai Restoran (Admin)	16
+5.2.1. Login Pegawai	16
+5.2.2. Dashboard Pegawai	16
+5.2.3. Mark as Done	16
+5.2.4. Logout	16
+
+
+Latar Belakang
+Kondisi Lapangan
+Motivasi
+Permasalahan
+Ide Solusi
+Perkembangan teknologi informasi dan komunikasi telah memberikan dampak signifikan terhadap berbagai sektor, salah satunya adalah sektor industri kuliner. Salah satu permasalahan yang sering dihadapi oleh pelanggan dalam pelayanan restoran adalah proses pemesanan makanan yang kurang efisien. Pada saat jam sibuk, antrean panjang di meja kasir menjadi hal umum, sehingga menyebabkan ketidaknyamanan bagi pelanggan dan memperberat beban kerja staf pelayanan.
+Pemanfaatan teknologi dalam bidang pelayanan konsumen merupakan solusi strategis untuk meningkatkan kualitas dan kecepatan layanan. Salah satunya adalah penggunaan Quick Response Code (QR Code) sebagai media akses menu digital dan sistem pemesanan berbasis web. Dengan pendekatan ini, pelanggan dapat melakukan pemesanan secara mandiri dari tempat duduk mereka menggunakan perangkat pribadi seperti smartphone tanpa harus datang ke meja kasir.
+Selain itu, integrasi pembayaran secara non-tunai melalui kartu debit atau kredit juga semakin diminati karena kemudahan dan kecepatannya. Hal ini mendukung konsep layanan tanpa kontak langsung (contactless service) yang relevan dalam situasi apapun, termasuk pada masa adaptasi kebiasaan baru pasca-pandemi.
+Berdasarkan fenomena tersebut, diperlukan pengembangan sebuah sistem pemesanan makanan berbasis web menggunakan QR Code yang terintegrasi dengan metode pembayaran elektronik. Sistem ini bertujuan untuk meningkatkan efisiensi proses pemesanan, mengurangi waktu antrean, serta memberikan pengalaman layanan yang lebih nyaman dan modern baik bagi pelanggan maupun penyedia jasa restoran.
+
+Persona Pengguna
+Persona 1: Yudi Wahyudi
+
+Latar Belakang
+Yudi adalah seorang pekerja kantoran yang memiliki waktu istirahat terbatas selama jam makan siang. Ia ingin memesan makanan dengan cepat tanpa harus menghabiskan banyak waktu hanya untuk antri di kasir. Ia juga lebih nyaman menggunakan layanan digital daripada berinteraksi langsung dengan petugas.
+
+Goals
+Dapat memesan makanan dengan cepat tanpa harus antri.
+Tidak perlu meninggalkan tempat duduk untuk memesan dan membayar.
+
+Frustations
+Merasa terganggu jika harus menunggu lama di antrian kasir saat jam sibuk.
+
+Persona 2: Arya Aryanto
+
+Latar Belakang
+Arya adalah seorang mahasiswa yang memiliki waktu luang terbatas karena menjadi pengurus lab. Ia ingin memesan makanan dengan cepat tanpa harus menghabiskan banyak waktu hanya untuk antri di kasir. Ia juga seorang perantau sehingga belum mengetahui menu dari restoran.
+
+Goals
+Ingin melihat daftar menu lengkap beserta harga secara jelas sebelum memesan.
+Menghindari kesalahan pesanan dan memastikan makanan sampai ke mejanya dengan benar.
+Melakukan pembayaran dengan metode non-tunai yang aman dan praktis.
+
+Frustations
+Khawatir salah memesan karena tidak ada detail menu yang jelas saat memesan langsung ke kasir atau kasir salah mendengar pesanannya.
+
+
+
+
+
+
+Sitemap
+https://www.gloomaps.com/Ww2Db3X32s
+https://www.gloomaps.com/z9pGiJshT9
+
+
+
+
+
+
+
+Struktur Utama Sistem
+Sitemap Rush Order terbagi menjadi dua bagian utama yang terpisah namun saling terhubung. Client Side dirancang khusus untuk pelanggan restoran yang akan melakukan pemesanan melalui smartphone mereka, sedangkan Admin Side diperuntukkan bagi staf restoran untuk mengelola pesanan yang masuk. Kedua sisi ini bekerja secara real-time dan terintegrasi melalui database yang sama.
+Client Side (Customer Interface)
+Landing & Authentication (/)
+Halaman utama yang dapat diakses melalui QR Code yang dipindai pelanggan
+Setiap QR Code unik untuk setiap meja, mengarahkan ke /order/{table_id}
+Pelanggan diminta mengisi nama pemesan untuk identifikasi
+Sistem membuat session yang menyimpan nama pelanggan dan nomor meja
+Menu & Ordering (/menu)
+Menu Categories: Menampilkan kategori makanan (Makanan Utama, Minuman, Snack & Dessert, Paket Combo)
+Item Details (/menu/item/{id}): Halaman detail untuk setiap menu dengan foto, deskripsi lengkap, dan harga
+Shopping Cart (/cart): Pelanggan dapat meninjau pesanan, mengubah quantity, melihat total harga, dan melanjutkan ke checkout
+Checkout & Payment (/checkout)
+Order Summary: Menampilkan ringkasan pesanan dan konfirmasi data pelanggan
+Payment Options: Menyediakan pilihan pembayaran kartu debit, kredit, dan e-wallet (opsional)
+Payment Gateway: Integrasi dengan sistem pembayaran eksternal untuk proses transaksi
+Success Page (/checkout/success): Menampilkan struk digital, konfirmasi pesanan, dan opsi print/download
+Admin Side (Restaurant Staff Interface)
+Authentication System (/admin)
+Login Portal (/admin/login): Sistem login aman dengan validasi username dan password
+Session Management: Menjaga status login pegawai selama shift kerja
+Security Features: Proteksi akses dan verifikasi role pegawai
+Dashboard & Order Management (/admin/dashboard)
+Pending Orders (/admin/orders/pending):
+Menampilkan daftar pesanan yang belum dilayani
+Detail lengkap setiap pesanan (nama pemesan, nomor meja, daftar menu, total harga, waktu pemesanan)
+Tombol "Mark as Done" untuk menandai pesanan selesai
+Completed Orders (/admin/orders/completed):
+Riwayat pesanan yang sudah dilayani
+Archive data untuk keperluan laporan
+Reporting System (/admin/reports) - Opsional
+Daily Reports: Laporan penjualan harian
+Menu Analytics: Statistik menu terlaris
+Revenue Data: Data omzet per periode
+Export Functions: Kemampuan export ke PDF/Excel
+Flow Sistem dan User Journey
+Customer Journey:
+QR Scan: Pelanggan memindai QR Code di meja
+Registration: Input nama dan setup session
+Menu Browsing: Menjelajahi menu dan memilih item
+Cart Management: Meninjau dan mengatur pesanan
+Payment: Melakukan pembayaran melalui gateway
+Confirmation: Menerima struk digital dan konfirmasi
+Admin Workflow:
+Login: Pegawai login ke sistem
+Monitor: Memantau pesanan masuk secara real-time
+Process: Memproses pesanan di dapur/bar
+Deliver: Mengantarkan pesanan ke meja
+Complete: Menandai pesanan sebagai selesai
+Keunggulan Struktur Sitemap
+Efisiensi Operasional:
+Mengurangi waktu antrian di kasir
+Mempercepat proses pemesanan
+Minimalisir kesalahan pencatatan pesanan
+Otomatisasi flow dari pemesanan hingga pembayaran
+User Experience:
+Interface yang intuitif dan mudah digunakan
+Proses pemesanan yang dapat dilakukan dari tempat duduk
+Transparansi harga dan detail menu
+Pembayaran cashless yang praktis
+Management Capabilities:
+Real-time monitoring pesanan
+Data analytics untuk business intelligence
+Inventory tracking melalui menu management
+Historical data untuk evaluasi performa
+Technical Architecture
+Database Structure:
+Orders Table: Menyimpan data pesanan utama
+Menu Items Table: Katalog menu restoran
+Order Items Table: Detail item dalam setiap pesanan
+Sessions Table: Management session pelanggan
+Admin Users Table: Data pegawai dan hak akses
+Security Features:
+Session-based authentication
+Role-based access control
+Secure payment integration
+Data encryption untuk informasi sensitif
+Scalability dan Future Enhancement
+Sitemap ini dirancang dengan mempertimbangkan pengembangan masa depan seperti:
+Real-time Notifications: WebSocket untuk update live
+Mobile App Integration: Kemungkinan pengembangan aplikasi mobile
+Multi-location Support: Dukungan untuk multiple cabang restoran
+Advanced Analytics: Dashboard analytics yang lebih komprehensif
+Customer Loyalty Program: Integrasi sistem poin dan reward
+
+
+
+
+Skenario 
+Narasi 1
+Yudi, seorang karyawan swasta di Jakarta, baru saja selesai bekerja selama beberapa jam dan merasa lapar. Dia memutuskan untuk makan siang di sebuah restoran favoritnya yang berada tidak jauh dari kantornya. Setelah memesan tempat duduk dan duduk di meja nomor 5, dia melihat ada sebuah kode QR yang tertempel di meja.
+
+Alih-alih mencari petugas kasir atau menunggu pelayan datang, Ahmad membuka kamera di ponselnya dan memindai kode QR tersebut . Dalam hitungan detik, dia langsung diarahkan ke halaman web pemesanan digital restoran tersebut.
+
+Setelah itu, dia diminta untuk mengisi nama pemesan , yaitu dirinya sendiri. Informasi ini disimpan sementara oleh sistem menggunakan session/cookies, sehingga sistem tahu bahwa pesanan ini berasal dari meja nomor 5.
+
+
+Narasi 2
+Ahmad kemudian mulai menjelajahi menu yang ditampilkan lengkap dengan foto, deskripsi, dan harga. Ia menambahkan beberapa item ke keranjang belanja: nasi goreng spesial, jus jeruk, dan kerupuk. Setelah puas memilih, ia klik tombol “Checkout”.
+
+Di halaman checkout, Ahmad dapat melihat rincian pesanannya beserta total harga. Tanpa perlu beranjak dari kursi, ia langsung melakukan pembayaran menggunakan kartu debit melalui integrasi payment gateway di dalam aplikasi. Beberapa detik setelah transaksi berhasil, sistem menampilkan struk digital yang bisa ia simpan atau cetak jika dibutuhkan.
+
+Sementara itu, di bagian dapur dan layanan, sistem otomatis mengirimkan notifikasi ke halaman pegawai. Di layar komputer, terlihat bahwa ada pesanan dari meja 5 atas nama Ahmad . Pelayan kemudian memproses pesanan tersebut.
+
+Beberapa menit kemudian, pelayan datang ke meja 5 dan menyajikan pesanan sesuai dengan nama dan lokasi yang tercatat di sistem. Setelah makanan tersaji, pelayan menekan tombol “Mark as Done” pada sistem, sehingga status pesanan berubah menjadi “Selesai Dilayani”.
+
+Bagi Ahmad, pengalaman ini sangat efisien dan nyaman. Ia tidak perlu antri, tidak perlu bolak-balik ke kasir, dan bisa memesan dengan tenang. Bagi restoran, proses ini juga meningkatkan efektivitas pelayanan karena pesanan lebih mudah dikelola dan terhindar dari kesalahan pencatatan.
+
+
+
+
+
+
+
+Fitur Aplikasi Web
+Bagian Client (Client)
+Scan QR Code
+Setiap meja memiliki kode QR unik.
+Pelanggan menggunakan kamera smartphone untuk scan QR dan langsung diarahkan ke halaman menu.
+
+Halaman Awal Pesanan (LAMAN)
+Setelah scan QR, pelanggan diminta mengisi nama pemesan.
+Data nama dan nomor meja disimpan dalam session/cookies agar sistem dapat mengetahui asal pesanan saat checkout.
+
+Pilih & Tambah Menu ke Keranjang
+Menampilkan daftar menu lengkap dengan foto, deskripsi, dan harga.
+Pengguna dapat memilih jumlah item dan menambahkannya ke keranjang belanja.
+
+Checkout & Pembayaran
+Setelah selesai memilih menu, pelanggan masuk ke halaman checkout.
+Tampil total harga, detail pesanan, dan nama pelanggan.
+Opsi pembayaran melalui kartu debit/kredit (misalnya via integrasi dengan payment gateway seperti Midtrans, Xendit, dll).
+
+Struk Digital & Konfirmasi Pesanan
+Setelah pembayaran berhasil, pesanan akan tersimpan di database.
+Pelanggan mendapat struk digital berupa halaman konfirmasi dan dapat didownload/print.
+Status pesanan otomatis menjadi “Belum Dilayani” di sisi pegawai.
+
+
+Bagian Pegawai Restoran (Admin)
+Login Pegawai
+Halaman login dengan validasi username dan password.
+Menggunakan session untuk menjaga status login selama sesi aktif.
+
+Dashboard Pegawai
+Menampilkan dua tabel/papan informasi:
+Pesanan belum dilayani
+Pesanan sudah dilayani
+Setiap pesanan menampilkan:
+Nama pemesan
+Nomor meja (berdasarkan cookies/session)
+Daftar menu yang dipesan
+Total harga
+Waktu pemesanan
+
+Mark as Done
+Pegawai dapat menandai pesanan sebagai "selesai dilayani" setelah makanan diantar ke meja.
+Data pesanan tetap tersimpan dalam riwayat untuk laporan harian/mingguan.
+
+Logout
+Tombol logout untuk mengakhiri sesi dan menghapus session pegawai.
+Laporan Harian (Saran Tambahan)
+Menampilkan rekap jumlah pesanan, omzet harian, dan menu yang paling laris.
+Dapat diekspor ke format PDF/Excel.
+
+
+
